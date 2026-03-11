@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Plano Estratégico de Escala — Baldança Botelho | Rafael Oshiro</title>
+<title>Plano Estrategico de Escala — Baldanca Botelho | Rafael Oshiro</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -66,22 +66,6 @@ body {
 .slide-content {
   max-width: 1100px;
   width: 100%;
-  animation: fadeInUp 0.8s ease-out;
-}
-
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(30px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@keyframes pulseGold {
-  0%, 100% { box-shadow: 0 0 20px rgba(212,175,55,0.2); }
-  50% { box-shadow: 0 0 35px rgba(212,175,55,0.4); }
 }
 
 /* ============ TYPOGRAPHY ============ */
@@ -150,14 +134,6 @@ p {
   border-radius: 16px;
   padding: 28px;
   margin-bottom: 20px;
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.glass-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 32px rgba(212,175,55,0.15);
 }
 
 .glass-card-sm {
@@ -166,7 +142,6 @@ p {
   border-radius: 12px;
   padding: 20px;
   margin-bottom: 14px;
-  backdrop-filter: blur(12px);
 }
 
 .card-grid {
@@ -197,7 +172,6 @@ p {
   background: var(--bg-card);
   border: 1px solid var(--gold-border);
   border-radius: 14px;
-  backdrop-filter: blur(12px);
 }
 
 .metric-value {
@@ -239,10 +213,6 @@ p {
   padding: 10px 16px;
   color: var(--white-90);
   border-bottom: 1px solid rgba(255,255,255,0.06);
-}
-
-.data-table tr:hover td {
-  background: rgba(212,175,55,0.05);
 }
 
 .data-table .highlight-row td {
@@ -371,12 +341,6 @@ p {
   gap: 16px;
   padding: 14px 20px;
   border-bottom: 1px solid rgba(255,255,255,0.06);
-  transition: background 0.2s;
-}
-
-.agenda-list li:hover {
-  background: rgba(212,175,55,0.05);
-  border-radius: 8px;
 }
 
 .agenda-num {
@@ -423,14 +387,13 @@ p {
   background: var(--white-20);
   border: 1px solid var(--gold-border);
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: background 0.2s, transform 0.2s;
 }
 
 .nav-dot:hover,
 .nav-dot.active {
   background: var(--gold);
   transform: scale(1.3);
-  box-shadow: 0 0 8px var(--gold-glow);
 }
 
 /* ============ TAG / BADGE ============ */
@@ -492,7 +455,6 @@ p {
   border-radius: 14px;
   padding: 24px;
   margin-bottom: 16px;
-  backdrop-filter: blur(12px);
 }
 
 .campaign-card .campaign-header {
@@ -596,6 +558,11 @@ p {
   font-size: 0.9rem;
 }
 
+/* ============ BACKEND HIGHLIGHT ============ */
+.backend-pulse {
+  box-shadow: 0 0 20px rgba(212,175,55,0.2);
+}
+
 /* ============ RESPONSIVE ============ */
 @media (max-width: 768px) {
   .slide { padding: 40px 20px 60px; }
@@ -628,13 +595,13 @@ p {
 <section class="slide" id="slide-1">
   <div class="slide-content cover-slide">
     <div class="cover-line"></div>
-    <h1>Plano Estratégico <span class="gold">de Escala</span></h1>
-    <div class="cover-brand">Baldança Botelho</div>
+    <h1>Plano Estrategico <span class="gold">de Escala</span></h1>
+    <div class="cover-brand">Baldanca Botelho</div>
     <div class="cover-line"></div>
     <p class="cover-author">Elaborado por <strong>Rafael Oshiro</strong></p>
-    <p class="cover-date">Março de 2026</p>
+    <p class="cover-date">Marco de 2026</p>
   </div>
-  <div class="slide-footer">Rafael Oshiro | Plano Estratégico de Escala | Março de 2026</div>
+  <div class="slide-footer">Rafael Oshiro | Plano Estrategico de Escala | Marco de 2026</div>
 </section>
 
 <!-- ============================== SLIDE 2: AGENDA ============================== -->
@@ -642,42 +609,42 @@ p {
   <div class="slide-content">
     <div class="slide-number">Slide 02</div>
     <h2>Agenda</h2>
-    <p class="subtitle">Visão geral do que vamos cobrir nesta apresentação.</p>
+    <p class="subtitle">Visao geral do que vamos cobrir nesta apresentacao.</p>
     <ul class="agenda-list">
-      <li><span class="agenda-num">01</span><span class="agenda-text">Diagnóstico — Números Reais da Operação</span></li>
-      <li><span class="agenda-num">02</span><span class="agenda-text">O Poder do Backend — Onde Está o Lucro</span></li>
+      <li><span class="agenda-num">01</span><span class="agenda-text">Diagnostico — Numeros Reais da Operacao</span></li>
+      <li><span class="agenda-num">02</span><span class="agenda-text">O Poder do Backend — Onde Esta o Lucro</span></li>
       <li><span class="agenda-num">03</span><span class="agenda-text">Desempenho dos Produtos</span></li>
       <li><span class="agenda-num">04</span><span class="agenda-text">O Desafio — Automatizar a Venda do Backend</span></li>
-      <li><span class="agenda-num">05</span><span class="agenda-text">Estratégia de Ascensão</span></li>
-      <li><span class="agenda-num">06</span><span class="agenda-text">Reestruturação de Campanhas</span></li>
-      <li><span class="agenda-num">07</span><span class="agenda-text">Resultados Esperados — Mês 1</span></li>
-      <li><span class="agenda-num">08</span><span class="agenda-text">Projeção Conservadora — Meses 2 e 3</span></li>
-      <li><span class="agenda-num">09</span><span class="agenda-text">Histórico Mensal Real</span></li>
-      <li><span class="agenda-num">10</span><span class="agenda-text">Análise de Mercado</span></li>
-      <li><span class="agenda-num">11</span><span class="agenda-text">Sugestões de Conteúdo para Instagram</span></li>
-      <li><span class="agenda-num">12</span><span class="agenda-text">Ponto Crítico — Velocidade da Página</span></li>
-      <li><span class="agenda-num">13</span><span class="agenda-text">Plano de Ação — 12 Semanas</span></li>
-      <li><span class="agenda-num">14</span><span class="agenda-text">Próximos Passos</span></li>
+      <li><span class="agenda-num">05</span><span class="agenda-text">Estrategia de Ascensao</span></li>
+      <li><span class="agenda-num">06</span><span class="agenda-text">Reestruturacao de Campanhas</span></li>
+      <li><span class="agenda-num">07</span><span class="agenda-text">Resultados Esperados — Mes 1</span></li>
+      <li><span class="agenda-num">08</span><span class="agenda-text">Projecao Conservadora — Meses 2 e 3</span></li>
+      <li><span class="agenda-num">09</span><span class="agenda-text">Historico Mensal Real</span></li>
+      <li><span class="agenda-num">10</span><span class="agenda-text">Analise de Mercado</span></li>
+      <li><span class="agenda-num">11</span><span class="agenda-text">Sugestoes de Conteudo para Instagram</span></li>
+      <li><span class="agenda-num">12</span><span class="agenda-text">Ponto Critico — Velocidade da Pagina</span></li>
+      <li><span class="agenda-num">13</span><span class="agenda-text">Plano de Acao — 12 Semanas</span></li>
+      <li><span class="agenda-num">14</span><span class="agenda-text">Proximos Passos</span></li>
     </ul>
   </div>
-  <div class="slide-footer">Rafael Oshiro | Plano Estratégico de Escala | Março de 2026</div>
+  <div class="slide-footer">Rafael Oshiro | Plano Estrategico de Escala | Marco de 2026</div>
 </section>
 
-<!-- ============================== SLIDE 3: DIAGNÓSTICO ============================== -->
+<!-- ============================== SLIDE 3: DIAGNOSTICO ============================== -->
 <section class="slide" id="slide-3">
   <div class="slide-content">
     <div class="slide-number">Slide 03</div>
-    <h2>Diagnóstico — <span class="gold">Números Reais</span></h2>
-    <p class="subtitle">Dados extraídos diretamente do painel Ticto e do Gerenciador de Anúncios do Facebook. Período: maio/2025 a março/2026 (~10 meses).</p>
+    <h2>Diagnostico — <span class="gold">Numeros Reais</span></h2>
+    <p class="subtitle">Dados extraidos diretamente do painel Ticto e do Gerenciador de Anuncios do Facebook. Periodo: maio/2025 a marco/2026 (~10 meses).</p>
 
     <div class="card-grid-4">
       <div class="metric-box">
         <div class="metric-value">R$29.405</div>
-        <div class="metric-label">Faturamento Líquido</div>
+        <div class="metric-label">Faturamento Liquido</div>
       </div>
       <div class="metric-box">
         <div class="metric-value">R$27.185</div>
-        <div class="metric-label">Investimento em Anúncios</div>
+        <div class="metric-label">Investimento em Anuncios</div>
       </div>
       <div class="metric-box">
         <div class="metric-value" style="color: var(--green-soft);">+R$2.220</div>
@@ -692,11 +659,11 @@ p {
     <div class="card-grid" style="margin-top: 24px;">
       <div class="glass-card-sm">
         <h3>Campanha Ativa</h3>
-        <p>1 campanha rodando há 10 meses:<br><em>"00 - Advantage+ Int. CFOAB [25/65 - Mulheres]"</em></p>
+        <p>1 campanha rodando ha 10 meses:<br><em>"00 - Advantage+ Int. CFOAB [25/65 - Mulheres]"</em></p>
         <p style="margin-bottom:0;"><span class="gold-text">Pixel:</span> 264 compras | <span class="gold-text">CPR:</span> R$102,97</p>
       </div>
       <div class="glass-card-sm">
-        <h3>Último Mês Completo</h3>
+        <h3>Ultimo Mes Completo</h3>
         <p><span class="gold-text">Investimento:</span> R$3.003,41</p>
         <p><span class="gold-text">Compras:</span> 34</p>
         <p style="margin-bottom:0;"><span class="gold-text">CPR:</span> R$88,34</p>
@@ -704,10 +671,10 @@ p {
     </div>
 
     <div class="highlight-box">
-      "O resultado é tecnicamente positivo, mas R$222 por mês não justifica o investimento de tempo e energia. Precisamos escalar."
+      "O resultado e tecnicamente positivo, mas R$222 por mes nao justifica o investimento de tempo e energia. Precisamos escalar."
     </div>
   </div>
-  <div class="slide-footer">Rafael Oshiro | Plano Estratégico de Escala | Março de 2026</div>
+  <div class="slide-footer">Rafael Oshiro | Plano Estrategico de Escala | Marco de 2026</div>
 </section>
 
 <!-- ============================== SLIDE 4: O PODER DO BACKEND ============================== -->
@@ -715,12 +682,12 @@ p {
   <div class="slide-content">
     <div class="slide-number">Slide 04</div>
     <h2>O Poder do <span class="gold">Backend</span></h2>
-    <p class="subtitle">O backend é o motor financeiro da operação. Sem ele, o projeto estaria no prejuízo.</p>
+    <p class="subtitle">O backend e o motor financeiro da operacao. Sem ele, o projeto estaria no prejuizo.</p>
 
     <div class="card-grid">
-      <div class="metric-box" style="animation: pulseGold 3s infinite;">
+      <div class="metric-box backend-pulse">
         <div class="metric-value">4 vendas</div>
-        <div class="metric-label">Honorário Todo Dia 5 — R$1.497 cada</div>
+        <div class="metric-label">Honorario Todo Dia 5 — R$1.497 cada</div>
       </div>
       <div class="metric-box">
         <div class="metric-value" style="color: var(--green-soft);">R$5.988</div>
@@ -732,22 +699,33 @@ p {
       <h3>Cronologia das Vendas do Backend</h3>
       <table class="data-table">
         <thead>
-          <tr><th>Mês</th><th>Vendas</th><th>Método</th></tr>
+          <tr><th>Mes</th><th>Cliente</th><th>Valor</th><th>Metodo</th></tr>
         </thead>
         <tbody>
-          <tr><td>Setembro/2025</td><td>1 venda</td><td>Manual (time comercial)</td></tr>
-          <tr><td>Dezembro/2025</td><td>1 venda</td><td>Manual (time comercial)</td></tr>
-          <tr><td>Janeiro/2026</td><td>1 venda</td><td>Manual (time comercial)</td></tr>
-          <tr><td>Fevereiro/2026</td><td>1 venda</td><td>Manual (time comercial)</td></tr>
+          <tr class="highlight-row"><td>Setembro/2025</td><td>Renata Maria Fonseca</td><td>R$1.497</td><td>Cartao de Credito</td></tr>
+          <tr class="highlight-row"><td>Dezembro/2025</td><td>Fernando Pereira de Lima Vianna</td><td>R$1.497</td><td>Cartao 6x</td></tr>
+          <tr class="highlight-row"><td>Janeiro/2026</td><td>Marina Souza Lipp Joao</td><td>R$1.497</td><td>Cartao 12x</td></tr>
+          <tr class="highlight-row"><td>Fevereiro/2026</td><td>Roger Henrique Lehmkuhl</td><td>R$1.497</td><td>Cartao 6x</td></tr>
         </tbody>
       </table>
     </div>
 
+    <div class="card-grid" style="margin-top: 16px;">
+      <div class="glass-card-sm">
+        <h3>Padrao Identificado</h3>
+        <p style="margin-bottom: 0;">Todas as 4 vendas foram feitas por <span class="gold-text">cartao de credito</span>, sendo 3 delas parceladas (6x ou 12x). Isso indica que o publico aceita o valor, mas precisa de opcoes de parcelamento. <span class="gold-text">Nenhuma venda foi feita por Pix</span> — oportunidade de oferecer desconto a vista.</p>
+      </div>
+      <div class="glass-card-sm">
+        <h3>Frequencia</h3>
+        <p style="margin-bottom: 0;">Media de <span class="gold-text">1 venda a cada 37 dias</span> (set/2025 a fev/2026). O intervalo entre vendas diminuiu nos ultimos meses, sugerindo que a base esta amadurecendo. Com automacao, essa frequencia pode <span class="green-text">dobrar ou triplicar</span>.</p>
+      </div>
+    </div>
+
     <div class="highlight-box-red">
-      <strong>Sem as 4 vendas do backend (R$5.988), a operação estaria no prejuízo.</strong> Todo o lucro vem daqui. Automatizar essa venda é a prioridade número 1.
+      <strong>Sem as 4 vendas do backend (R$5.988), a operacao estaria no prejuizo.</strong> Todo o lucro vem daqui. Automatizar essa venda e a prioridade numero 1.
     </div>
   </div>
-  <div class="slide-footer">Rafael Oshiro | Plano Estratégico de Escala | Março de 2026</div>
+  <div class="slide-footer">Rafael Oshiro | Plano Estrategico de Escala | Marco de 2026</div>
 </section>
 
 <!-- ============================== SLIDE 5: DESEMPENHO DOS PRODUTOS ============================== -->
@@ -755,21 +733,21 @@ p {
   <div class="slide-content">
     <div class="slide-number">Slide 05</div>
     <h2>Desempenho dos <span class="gold">Produtos</span></h2>
-    <p class="subtitle">Análise detalhada de cada produto a partir da base real de 325 compradores.</p>
+    <p class="subtitle">Analise detalhada de cada produto a partir da base real de 325 compradores.</p>
 
     <div class="glass-card">
       <table class="data-table">
         <thead>
           <tr>
             <th>Produto</th>
-            <th>Preço</th>
+            <th>Preco</th>
             <th>Compradores</th>
-            <th>Taxa de Adesão</th>
+            <th>Taxa de Adesao</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td><strong>Rota dos Honorários</strong> <span class="tag tag-gold">Front</span></td>
+            <td><strong>Rota dos Honorarios</strong> <span class="tag tag-gold">Front</span></td>
             <td>R$47</td>
             <td>323</td>
             <td>100%</td>
@@ -787,13 +765,13 @@ p {
             <td><strong>24,8%</strong></td>
           </tr>
           <tr>
-            <td>Script Magnético</td>
+            <td>Script Magnetico</td>
             <td>R$27-47</td>
             <td>44</td>
             <td>13,6%</td>
           </tr>
           <tr>
-            <td>Serviços 3 Níveis <span class="tag tag-green">Upsell</span></td>
+            <td>Servicos 3 Niveis <span class="tag tag-green">Upsell</span></td>
             <td>R$47</td>
             <td>14</td>
             <td>4,3%</td>
@@ -805,7 +783,7 @@ p {
             <td>1,2%</td>
           </tr>
           <tr class="highlight-row">
-            <td><strong>Honorário Todo Dia 5</strong> <span class="tag tag-gold">Backend</span></td>
+            <td><strong>Honorario Todo Dia 5</strong> <span class="tag tag-gold">Backend</span></td>
             <td>R$1.497</td>
             <td>4</td>
             <td>1,2%</td>
@@ -817,16 +795,16 @@ p {
     <div class="card-grid">
       <div class="glass-card-sm">
         <h3>Multi-compra</h3>
-        <p><span class="gold-text">40,6%</span> dos compradores (132 de 325) compraram mais de um produto. Isso indica excelente confiança na marca e no conteúdo entregue.</p>
+        <p><span class="gold-text">40,6%</span> dos compradores (132 de 325) compraram mais de um produto. Isso indica excelente confianca na marca e no conteudo entregue.</p>
       </div>
       <div class="glass-card-sm">
         <h3>Formas de Pagamento</h3>
-        <p><span class="gold-text">73,7%</span> Pix | <span class="gold-text">26,3%</span> Cartão de Crédito</p>
-        <p style="margin-bottom:0;">Predominância de Pix indica público que prefere pagamento à vista com desconto.</p>
+        <p><span class="gold-text">73,7%</span> Pix | <span class="gold-text">26,3%</span> Cartao de Credito</p>
+        <p style="margin-bottom:0;">Predominancia de Pix indica publico que prefere pagamento a vista com desconto.</p>
       </div>
     </div>
   </div>
-  <div class="slide-footer">Rafael Oshiro | Plano Estratégico de Escala | Março de 2026</div>
+  <div class="slide-footer">Rafael Oshiro | Plano Estrategico de Escala | Marco de 2026</div>
 </section>
 
 <!-- ============================== SLIDE 6: O DESAFIO ============================== -->
@@ -834,113 +812,113 @@ p {
   <div class="slide-content">
     <div class="slide-number">Slide 06</div>
     <h2>O Desafio — <span class="gold">Automatizar a Venda do Backend</span></h2>
-    <p class="subtitle">O backend já existe e já vende. O problema é que depende 100% de abordagem manual.</p>
+    <p class="subtitle">O backend ja existe e ja vende. O problema e que depende 100% de abordagem manual.</p>
 
     <div class="card-grid">
       <div class="glass-card" style="border-left: 4px solid var(--green-soft);">
-        <h3 style="color: var(--green-soft);">O que já funciona</h3>
+        <h3 style="color: var(--green-soft);">O que ja funciona</h3>
         <ul style="list-style: none; padding: 0;">
           <li style="padding: 6px 0; color: var(--white-90);">&#10003; O backend existe e tem demanda comprovada (4 vendas)</li>
-          <li style="padding: 6px 0; color: var(--white-90);">&#10003; O público tem capacidade financeira e interesse</li>
+          <li style="padding: 6px 0; color: var(--white-90);">&#10003; O publico tem capacidade financeira e interesse</li>
           <li style="padding: 6px 0; color: var(--white-90);">&#10003; O front-end gera compradores de forma consistente</li>
-          <li style="padding: 6px 0; color: var(--white-90);">&#10003; Alta taxa de multi-compra (40,6%) demonstra confiança</li>
+          <li style="padding: 6px 0; color: var(--white-90);">&#10003; Alta taxa de multi-compra (40,6%) demonstra confianca</li>
         </ul>
       </div>
       <div class="glass-card" style="border-left: 4px solid var(--red-soft);">
         <h3 style="color: var(--red-soft);">O que precisa mudar</h3>
         <ul style="list-style: none; padding: 0;">
           <li style="padding: 6px 0; color: var(--white-90);">&#10007; Vendas dependem 100% de abordagem manual</li>
-          <li style="padding: 6px 0; color: var(--white-90);">&#10007; Não existe automação para escalar</li>
-          <li style="padding: 6px 0; color: var(--white-90);">&#10007; Sem banners na área de membros promovendo o backend</li>
-          <li style="padding: 6px 0; color: var(--white-90);">&#10007; Sem recuperação de carrinho abandonado</li>
-          <li style="padding: 6px 0; color: var(--white-90);">&#10007; Sem automação de WhatsApp para nutrição</li>
+          <li style="padding: 6px 0; color: var(--white-90);">&#10007; Nao existe automacao para escalar</li>
+          <li style="padding: 6px 0; color: var(--white-90);">&#10007; Sem banners na area de membros promovendo o backend</li>
+          <li style="padding: 6px 0; color: var(--white-90);">&#10007; Sem recuperacao de carrinho abandonado</li>
+          <li style="padding: 6px 0; color: var(--white-90);">&#10007; Sem automacao de WhatsApp para nutricao</li>
         </ul>
       </div>
     </div>
 
     <div class="highlight-box-green">
-      <strong>Solução:</strong> Construir uma infraestrutura de automação com banners na área de membros, automação de WhatsApp via N8N e recuperação de carrinho abandonado. A automação aquece o cliente; o time comercial fecha a venda.
+      <strong>Solucao:</strong> Construir uma infraestrutura de automacao com banners na area de membros, automacao de WhatsApp via N8N e recuperacao de carrinho abandonado. A automacao aquece o cliente; o time comercial fecha a venda.
     </div>
   </div>
-  <div class="slide-footer">Rafael Oshiro | Plano Estratégico de Escala | Março de 2026</div>
+  <div class="slide-footer">Rafael Oshiro | Plano Estrategico de Escala | Marco de 2026</div>
 </section>
 
-<!-- ============================== SLIDE 7: ESTRATÉGIA DE ASCENSÃO ============================== -->
+<!-- ============================== SLIDE 7: ESTRATEGIA DE ASCENSAO ============================== -->
 <section class="slide" id="slide-7">
   <div class="slide-content">
     <div class="slide-number">Slide 07</div>
-    <h2>A Estratégia de <span class="gold">Ascensão</span></h2>
+    <h2>A Estrategia de <span class="gold">Ascensao</span></h2>
     <p class="subtitle">Como levar o cliente do front-end ao backend — e, no futuro, ao high ticket — de forma automatizada.</p>
 
     <div class="flow-horizontal">
       <div class="flow-box">
         <div class="flow-price">R$47</div>
-        <div class="flow-name">Rota dos Honorários<br>+ Bumps + Upsells</div>
+        <div class="flow-name">Rota dos Honorarios<br>+ Bumps + Upsells</div>
       </div>
       <div class="flow-arrow">&#8594;</div>
-      <div class="flow-box" style="animation: pulseGold 3s infinite;">
+      <div class="flow-box backend-pulse">
         <div class="flow-price">R$1.497</div>
-        <div class="flow-name">Honorário Todo Dia 5<br>(Backend)</div>
+        <div class="flow-name">Honorario Todo Dia 5<br>(Backend)</div>
       </div>
       <div class="flow-arrow">&#8594;</div>
       <div class="flow-box">
         <div class="flow-price">R$4.497-4.997</div>
-        <div class="flow-name">Pós-Graduação<br>Advocacia Empresarial</div>
+        <div class="flow-name">Pos-Graduacao<br>Advocacia Empresarial</div>
       </div>
     </div>
 
     <div class="glass-card" style="margin-top: 12px;">
       <h3>Etapa 1 — Consumo do Front-end</h3>
-      <p>O cliente compra a Rota dos Honorários e acessa a área de membros. <strong>Banners estratégicos dentro da área promovem o backend</strong> enquanto o cliente consome o conteúdo. Quanto mais ele avança nos módulos, mais desejo é criado pelo próximo nível.</p>
+      <p>O cliente compra a Rota dos Honorarios e acessa a area de membros. <strong>Banners estrategicos dentro da area promovem o backend</strong> enquanto o cliente consome o conteudo. Quanto mais ele avanca nos modulos, mais desejo e criado pelo proximo nivel.</p>
     </div>
 
     <div class="glass-card">
-      <h3>Etapa 2 — Automação WhatsApp (N8N)</h3>
-      <p>Mensagens automáticas de acompanhamento de consumo. <em>"Você já assistiu o módulo X?"</em> — gera engajamento, mostra que o projeto se importa com o progresso do cliente e cria desejo natural pelo próximo nível.</p>
+      <h3>Etapa 2 — Automacao WhatsApp (N8N)</h3>
+      <p>Mensagens automaticas de acompanhamento de consumo. <em>"Voce ja assistiu o modulo X?"</em> — gera engajamento, mostra que o projeto se importa com o progresso do cliente e cria desejo natural pelo proximo nivel.</p>
     </div>
 
     <div class="glass-card">
-      <h3>Etapa 3 — Recuperação de Carrinho Abandonado</h3>
-      <p>Automação via WhatsApp para recuperar vendas perdidas no checkout. Mensagens direcionadas para quem iniciou a compra mas não concluiu. Recuperação que funciona 24 horas por dia, sem depender de intervenção manual.</p>
+      <h3>Etapa 3 — Recuperacao de Carrinho Abandonado</h3>
+      <p>Automacao via WhatsApp para recuperar vendas perdidas no checkout. Mensagens direcionadas para quem iniciou a compra mas nao concluiu. Recuperacao que funciona 24 horas por dia, sem depender de intervencao manual.</p>
     </div>
 
     <div class="glass-card">
-      <h3>Etapa 4 — Ascensão ao Backend (R$1.497)</h3>
-      <p>Quando o cliente demonstra interesse — clicou no banner, respondeu uma mensagem, consumiu grande parte do conteúdo — o <strong>time comercial faz a abordagem final</strong>. A automação aquece; o time fecha.</p>
+      <h3>Etapa 4 — Ascensao ao Backend (R$1.497)</h3>
+      <p>Quando o cliente demonstra interesse — clicou no banner, respondeu uma mensagem, consumiu grande parte do conteudo — o <strong>time comercial faz a abordagem final</strong>. A automacao aquece; o time fecha.</p>
     </div>
 
     <div class="glass-card" style="border: 1px solid rgba(212,175,55,0.5);">
-      <h3>Etapa 5 (Futuro) — High Ticket: Pós-Graduação</h3>
-      <p><strong>Pós-Graduação em Advocacia Empresarial Extrajudicial com Ênfase no Mercado de Marketing Digital</strong></p>
-      <p>Parceria com a <strong>Anhanguera</strong> (via Voomp). Reconhecida pelo <strong>MEC</strong>. 392 horas, 10 disciplinas, 12 meses de duração.</p>
-      <p><span class="gold-text">Preço:</span> R$4.497 a R$4.997 | <span class="gold-text">Pagamento:</span> Pix, cartão, boleto parcelado (14x), recorrência no cartão.</p>
-      <p style="margin-bottom: 0;">Destinada a clientes que já passaram pelo backend e buscam uma certificação reconhecida para elevar suas carreiras.</p>
+      <h3>Etapa 5 (Futuro) — High Ticket: Pos-Graduacao</h3>
+      <p><strong>Pos-Graduacao em Advocacia Empresarial Extrajudicial com Enfase no Mercado de Marketing Digital</strong></p>
+      <p>Parceria com a <strong>Anhanguera</strong> (via Voomp). Reconhecida pelo <strong>MEC</strong>. 392 horas, 10 disciplinas, 12 meses de duracao.</p>
+      <p><span class="gold-text">Preco:</span> R$4.497 a R$4.997 | <span class="gold-text">Pagamento:</span> Pix, cartao, boleto parcelado (14x), recorrencia no cartao.</p>
+      <p style="margin-bottom: 0;">Destinada a clientes que ja passaram pelo backend e buscam uma certificacao reconhecida para elevar suas carreiras.</p>
     </div>
   </div>
-  <div class="slide-footer">Rafael Oshiro | Plano Estratégico de Escala | Março de 2026</div>
+  <div class="slide-footer">Rafael Oshiro | Plano Estrategico de Escala | Marco de 2026</div>
 </section>
 
-<!-- ============================== SLIDE 8: REESTRUTURAÇÃO DE CAMPANHAS ============================== -->
+<!-- ============================== SLIDE 8: REESTRUTURACAO DE CAMPANHAS ============================== -->
 <section class="slide" id="slide-8">
   <div class="slide-content">
     <div class="slide-number">Slide 08</div>
-    <h2>Reestruturação de <span class="gold">Campanhas</span></h2>
-    <p class="subtitle">De 1 campanha para 5, com objetivos distintos e orçamentos otimizados.</p>
+    <h2>Reestruturacao de <span class="gold">Campanhas</span></h2>
+    <p class="subtitle">De 1 campanha para 5, com objetivos distintos e orcamentos otimizados.</p>
 
     <div class="campaign-card">
       <div class="campaign-header">
         <span class="campaign-name">C1 — ASC (Advantage+ Shopping Campaign)</span>
         <span class="campaign-budget">R$60/dia</span>
       </div>
-      <p>O formato mais avançado do Facebook. O algoritmo recebe liberdade total para encontrar os melhores compradores automaticamente. O Facebook testa milhares de combinações e direciona o investimento para onde gera mais vendas.</p>
+      <p>O formato mais avancado do Facebook. O algoritmo recebe liberdade total para encontrar os melhores compradores automaticamente. O Facebook testa milhares de combinacoes e direciona o investimento para onde gera mais vendas.</p>
     </div>
 
     <div class="campaign-card">
       <div class="campaign-header">
-        <span class="campaign-name">C2 — CBO (Otimização de Orçamento)</span>
+        <span class="campaign-name">C2 — CBO (Otimizacao de Orcamento)</span>
         <span class="campaign-budget">R$50/dia</span>
       </div>
-      <p>Vários grupos de público diferentes e o Facebook distribui o dinheiro automaticamente para o grupo que gera mais resultados. É como ter 4 lojas e colocar mais vendedores na que vende mais. 4 grupos de público.</p>
+      <p>Varios grupos de publico diferentes e o Facebook distribui o dinheiro automaticamente para o grupo que gera mais resultados. E como ter 4 lojas e colocar mais vendedores na que vende mais. 4 grupos de publico.</p>
     </div>
 
     <div class="campaign-card">
@@ -948,7 +926,7 @@ p {
         <span class="campaign-name">C3 — Retargeting</span>
         <span class="campaign-budget">R$20/dia</span>
       </div>
-      <p>Anúncios para quem já visitou a página ou interagiu com o perfil, mas ainda não comprou. São pessoas que já demonstraram interesse — precisam apenas de mais um empurrão.</p>
+      <p>Anuncios para quem ja visitou a pagina ou interagiu com o perfil, mas ainda nao comprou. Sao pessoas que ja demonstraram interesse — precisam apenas de mais um empurrao.</p>
     </div>
 
     <div class="campaign-card">
@@ -956,7 +934,7 @@ p {
         <span class="campaign-name">C4 — Backend (Clientes Existentes)</span>
         <span class="campaign-budget">R$15/dia</span>
       </div>
-      <p>Anúncios exclusivos para quem já é cliente. Objetivo: levar de volta à área de membros para consumir conteúdo e conhecer o backend. Reforça as automações de WhatsApp e os banners da área de membros.</p>
+      <p>Anuncios exclusivos para quem ja e cliente. Objetivo: levar de volta a area de membros para consumir conteudo e conhecer o backend. Reforca as automacoes de WhatsApp e os banners da area de membros.</p>
     </div>
 
     <div class="campaign-card">
@@ -964,49 +942,49 @@ p {
         <span class="campaign-name">C5 — Campanha Atual (Controle)</span>
         <span class="campaign-budget">R$40/dia</span>
       </div>
-      <p>Campanha existente com investimento reduzido. Mantida como comparação para medir a performance das novas campanhas. Reduz gradualmente conforme as novas campanhas se provam.</p>
+      <p>Campanha existente com investimento reduzido. Mantida como comparacao para medir a performance das novas campanhas. Reduz gradualmente conforme as novas campanhas se provam.</p>
     </div>
 
     <div class="glass-card" style="text-align: center; margin-top: 8px;">
-      <div class="metric-value">R$185/dia = R$5.550/mês</div>
-      <div class="metric-label">Investimento Total em Anúncios</div>
+      <div class="metric-value">R$185/dia = R$5.550/mes</div>
+      <div class="metric-label">Investimento Total em Anuncios</div>
     </div>
   </div>
-  <div class="slide-footer">Rafael Oshiro | Plano Estratégico de Escala | Março de 2026</div>
+  <div class="slide-footer">Rafael Oshiro | Plano Estrategico de Escala | Marco de 2026</div>
 </section>
 
-<!-- ============================== SLIDE 9: RESULTADOS ESPERADOS — MÊS 1 ============================== -->
+<!-- ============================== SLIDE 9: RESULTADOS ESPERADOS — MES 1 ============================== -->
 <section class="slide" id="slide-9">
   <div class="slide-content">
     <div class="slide-number">Slide 09</div>
-    <h2>Resultados Esperados — <span class="gold">Mês 1</span></h2>
-    <p class="subtitle">O mês 1 é de estruturação. Montamos toda a infraestrutura de automação e iniciamos os testes das novas campanhas.</p>
+    <h2>Resultados Esperados — <span class="gold">Mes 1</span></h2>
+    <p class="subtitle">O mes 1 e de estruturacao. Montamos toda a infraestrutura de automacao e iniciamos os testes das novas campanhas.</p>
 
     <div class="card-grid">
       <div class="glass-card">
-        <h3>Semanas 1-2: Configuração</h3>
+        <h3>Semanas 1-2: Configuracao</h3>
         <ul style="list-style: none; padding: 0;">
-          <li style="padding: 6px 0; color: var(--white-90);">&#9679; Configuração das automações N8N (WhatsApp)</li>
-          <li style="padding: 6px 0; color: var(--white-90);">&#9679; Criação e instalação dos banners na área de membros</li>
-          <li style="padding: 6px 0; color: var(--white-90);">&#9679; Montagem dos públicos no Facebook (lookalikes, interesses, custom audiences)</li>
-          <li style="padding: 6px 0; color: var(--white-90);">&#9679; Criação de novos criativos para as campanhas</li>
-          <li style="padding: 6px 0; color: var(--white-90);">&#9679; Implementação da recuperação de carrinho abandonado</li>
+          <li style="padding: 6px 0; color: var(--white-90);">&#9679; Configuracao das automacoes N8N (WhatsApp)</li>
+          <li style="padding: 6px 0; color: var(--white-90);">&#9679; Criacao e instalacao dos banners na area de membros</li>
+          <li style="padding: 6px 0; color: var(--white-90);">&#9679; Montagem dos publicos no Facebook (lookalikes, interesses, custom audiences)</li>
+          <li style="padding: 6px 0; color: var(--white-90);">&#9679; Criacao de novos criativos para as campanhas</li>
+          <li style="padding: 6px 0; color: var(--white-90);">&#9679; Implementacao da recuperacao de carrinho abandonado</li>
         </ul>
       </div>
       <div class="glass-card">
-        <h3>Semanas 3-4: Ativação</h3>
+        <h3>Semanas 3-4: Ativacao</h3>
         <ul style="list-style: none; padding: 0;">
           <li style="padding: 6px 0; color: var(--white-90);">&#9679; Novas campanhas no ar (C1 a C4)</li>
-          <li style="padding: 6px 0; color: var(--white-90);">&#9679; Automações de WhatsApp ativas e rodando</li>
-          <li style="padding: 6px 0; color: var(--white-90);">&#9679; Recuperação de carrinho funcionando</li>
-          <li style="padding: 6px 0; color: var(--white-90);">&#9679; Monitoramento diário de performance</li>
-          <li style="padding: 6px 0; color: var(--white-90);">&#9679; Ajustes rápidos com base nos primeiros dados</li>
+          <li style="padding: 6px 0; color: var(--white-90);">&#9679; Automacoes de WhatsApp ativas e rodando</li>
+          <li style="padding: 6px 0; color: var(--white-90);">&#9679; Recuperacao de carrinho funcionando</li>
+          <li style="padding: 6px 0; color: var(--white-90);">&#9679; Monitoramento diario de performance</li>
+          <li style="padding: 6px 0; color: var(--white-90);">&#9679; Ajustes rapidos com base nos primeiros dados</li>
         </ul>
       </div>
     </div>
 
     <div class="glass-card" style="margin-top: 8px;">
-      <h3>Metas do Mês 1</h3>
+      <h3>Metas do Mes 1</h3>
       <div class="card-grid-3">
         <div class="metric-box">
           <div class="metric-value" style="font-size: 1.5rem;">< R$75</div>
@@ -1018,117 +996,117 @@ p {
         </div>
         <div class="metric-box">
           <div class="metric-value" style="font-size: 1.5rem;">Ativa</div>
-          <div class="metric-label">Recuperação de Carrinho</div>
+          <div class="metric-label">Recuperacao de Carrinho</div>
         </div>
       </div>
     </div>
 
     <div class="highlight-box">
-      "O mês 1 é de estruturação. Montamos toda a infraestrutura de automação e iniciamos os testes das novas campanhas. Resultados significativos começam a aparecer a partir do mês 2."
+      "O mes 1 e de estruturacao. Montamos toda a infraestrutura de automacao e iniciamos os testes das novas campanhas. Resultados significativos comecam a aparecer a partir do mes 2."
     </div>
   </div>
-  <div class="slide-footer">Rafael Oshiro | Plano Estratégico de Escala | Março de 2026</div>
+  <div class="slide-footer">Rafael Oshiro | Plano Estrategico de Escala | Marco de 2026</div>
 </section>
 
-<!-- ============================== SLIDE 10: PROJEÇÃO CONSERVADORA ============================== -->
+<!-- ============================== SLIDE 10: PROJECAO CONSERVADORA ============================== -->
 <section class="slide" id="slide-10">
   <div class="slide-content">
     <div class="slide-number">Slide 10</div>
-    <h2>Projeção Conservadora — <span class="gold">Meses 2 e 3</span></h2>
-    <p class="subtitle">Projeções baseadas nos dados atuais, assumindo que as otimizações gerem melhorias incrementais. Estes são cenários, não garantias — dependem da execução.</p>
+    <h2>Projecao Conservadora — <span class="gold">Meses 2 e 3</span></h2>
+    <p class="subtitle">Projecoes baseadas nos dados atuais, assumindo que as otimizacoes gerem melhorias incrementais. Estes sao cenarios, nao garantias — dependem da execucao.</p>
 
     <div class="card-grid">
       <div class="glass-card">
-        <h3>Mês 2 — Otimização</h3>
+        <h3>Mes 2 — Otimizacao</h3>
         <table class="data-table">
           <tbody>
-            <tr><td>Investimento em anúncios</td><td class="gold-text">~R$5.550</td></tr>
+            <tr><td>Investimento em anuncios</td><td class="gold-text">~R$5.550</td></tr>
             <tr><td>Compradores front-end (estimativa)</td><td>35-45</td></tr>
             <tr><td>CPA projetado</td><td>R$65-80</td></tr>
             <tr><td>Receita front + bumps + upsells</td><td>~R$3.500-5.000</td></tr>
-            <tr><td>Vendas backend (projeção)</td><td>1-2 vendas (R$1.497-2.994)</td></tr>
-            <tr><td>Recuperação de carrinho</td><td>3-5 vendas recuperadas</td></tr>
+            <tr><td>Vendas backend (projecao)</td><td>1-2 vendas (R$1.497-2.994)</td></tr>
+            <tr><td>Recuperacao de carrinho</td><td>3-5 vendas recuperadas</td></tr>
           </tbody>
         </table>
-        <p style="margin-top: 12px; font-size: 0.88rem; color: var(--white-50);">Com as automações rodando e campanhas otimizadas, a expectativa é que o backend comece a gerar vendas de forma mais previsível. Cenário conservador: 1 venda de backend; cenário otimista: 2 vendas.</p>
+        <p style="margin-top: 12px; font-size: 0.88rem; color: var(--white-50);">Com as automacoes rodando e campanhas otimizadas, a expectativa e que o backend comece a gerar vendas de forma mais previsivel. Cenario conservador: 1 venda de backend; cenario otimista: 2 vendas.</p>
       </div>
 
       <div class="glass-card">
-        <h3>Mês 3 — Escala Inicial</h3>
+        <h3>Mes 3 — Escala Inicial</h3>
         <table class="data-table">
           <tbody>
-            <tr><td>Investimento em anúncios</td><td class="gold-text">~R$5.550-6.500</td></tr>
+            <tr><td>Investimento em anuncios</td><td class="gold-text">~R$5.550-6.500</td></tr>
             <tr><td>Compradores front-end (estimativa)</td><td>40-55</td></tr>
             <tr><td>CPA projetado</td><td>R$55-70</td></tr>
             <tr><td>Receita front + bumps + upsells</td><td>~R$4.000-6.000</td></tr>
-            <tr><td>Vendas backend (projeção)</td><td>2-3 vendas (R$2.994-4.491)</td></tr>
-            <tr><td>Recuperação de carrinho</td><td>5-8 vendas recuperadas</td></tr>
+            <tr><td>Vendas backend (projecao)</td><td>2-3 vendas (R$2.994-4.491)</td></tr>
+            <tr><td>Recuperacao de carrinho</td><td>5-8 vendas recuperadas</td></tr>
           </tbody>
         </table>
-        <p style="margin-top: 12px; font-size: 0.88rem; color: var(--white-50);">Com dados acumulados de 2 meses de testes, as campanhas e automações estarão otimizadas. Escalamos investimento apenas nas campanhas que comprovarem resultado.</p>
+        <p style="margin-top: 12px; font-size: 0.88rem; color: var(--white-50);">Com dados acumulados de 2 meses de testes, as campanhas e automacoes estarao otimizadas. Escalamos investimento apenas nas campanhas que comprovarem resultado.</p>
       </div>
     </div>
 
     <div class="highlight-box">
-      "Estas projeções são conservadoras e dependem da execução. O objetivo real é construir um sistema que gere vendas de backend de forma previsível — não depender de projeções otimistas."
+      "Estas projecoes sao conservadoras e dependem da execucao. O objetivo real e construir um sistema que gere vendas de backend de forma previsivel — nao depender de projecoes otimistas."
     </div>
   </div>
-  <div class="slide-footer">Rafael Oshiro | Plano Estratégico de Escala | Março de 2026</div>
+  <div class="slide-footer">Rafael Oshiro | Plano Estrategico de Escala | Marco de 2026</div>
 </section>
 
-<!-- ============================== SLIDE 11: HISTÓRICO MENSAL ============================== -->
+<!-- ============================== SLIDE 11: HISTORICO MENSAL ============================== -->
 <section class="slide" id="slide-11">
   <div class="slide-content">
     <div class="slide-number">Slide 11</div>
-    <h2>Histórico Mensal <span class="gold">Real</span></h2>
-    <p class="subtitle">Dados reais de faturamento mensal extraídos do CSV de vendas. O padrão mostra crescimento inicial seguido de estabilização e declínio recente.</p>
+    <h2>Historico Mensal <span class="gold">Real</span></h2>
+    <p class="subtitle">Dados reais de faturamento mensal extraidos do CSV de vendas. O padrao mostra crescimento inicial seguido de estabilizacao e declinio recente.</p>
 
     <div class="glass-card">
       <table class="data-table">
         <thead>
           <tr>
-            <th>Mês</th>
+            <th>Mes</th>
             <th>Compradores</th>
             <th>Faturamento</th>
-            <th>Observação</th>
+            <th>Observacao</th>
           </tr>
         </thead>
         <tbody>
-          <tr><td>Mai/2025</td><td>15</td><td>R$967</td><td>Início da operação</td></tr>
-          <tr><td>Jun/2025</td><td>49</td><td>R$4.546</td><td>Melhor mês em volume</td></tr>
+          <tr><td>Mai/2025</td><td>15</td><td>R$967</td><td>Inicio da operacao</td></tr>
+          <tr><td>Jun/2025</td><td>49</td><td>R$4.546</td><td>Melhor mes em volume</td></tr>
           <tr><td>Jul/2025</td><td>41</td><td>R$2.847</td><td></td></tr>
           <tr><td>Ago/2025</td><td>31</td><td>R$2.679</td><td></td></tr>
-          <tr class="highlight-row"><td>Set/2025</td><td>29</td><td>R$4.062</td><td>1 venda backend</td></tr>
+          <tr class="highlight-row"><td>Set/2025</td><td>29</td><td>R$4.062</td><td>Backend: Renata M. Fonseca</td></tr>
           <tr><td>Out/2025</td><td>35</td><td>R$2.585</td><td></td></tr>
           <tr><td>Nov/2025</td><td>37</td><td>R$2.988</td><td></td></tr>
-          <tr class="highlight-row"><td>Dez/2025</td><td>36</td><td>R$4.156</td><td>1 venda backend</td></tr>
-          <tr class="highlight-row"><td>Jan/2026</td><td>36</td><td>R$4.082</td><td>1 venda backend</td></tr>
-          <tr class="highlight-row"><td>Fev/2026</td><td>19</td><td>R$2.981</td><td>1 venda backend</td></tr>
-          <tr><td>Mar/2026 (parcial)</td><td>10</td><td>R$826</td><td>Mês em andamento</td></tr>
+          <tr class="highlight-row"><td>Dez/2025</td><td>36</td><td>R$4.156</td><td>Backend: Fernando P. L. Vianna</td></tr>
+          <tr class="highlight-row"><td>Jan/2026</td><td>36</td><td>R$4.082</td><td>Backend: Marina S. L. Joao</td></tr>
+          <tr class="highlight-row"><td>Fev/2026</td><td>19</td><td>R$2.981</td><td>Backend: Roger H. Lehmkuhl</td></tr>
+          <tr><td>Mar/2026 (parcial)</td><td>10</td><td>R$826</td><td>Mes em andamento</td></tr>
         </tbody>
       </table>
     </div>
 
     <div class="card-grid">
       <div class="glass-card-sm">
-        <h3>Padrão Identificado</h3>
-        <p style="margin-bottom: 0;">Junho/2025 foi o pico de volume (49 compradores). Desde então, houve estabilização entre 29-37 compradores por mês. Fevereiro/2026 mostra queda (19 compradores). <span class="red-text">Sinal de fadiga de campanha.</span> A reestruturação é urgente.</p>
+        <h3>Padrao Identificado</h3>
+        <p style="margin-bottom: 0;">Junho/2025 foi o pico de volume (49 compradores). Desde entao, houve estabilizacao entre 29-37 compradores por mes. Fevereiro/2026 mostra queda (19 compradores). <span class="red-text">Sinal de fadiga de campanha.</span> A reestruturacao e urgente.</p>
       </div>
       <div class="glass-card-sm">
         <h3>O Impacto do Backend</h3>
-        <p style="margin-bottom: 0;">Nos meses com venda de backend, o faturamento salta significativamente. Setembro, dezembro, janeiro e fevereiro — todos com backend — superaram os demais. <span class="gold-text">O backend é o diferencial.</span></p>
+        <p style="margin-bottom: 0;">Nos meses com venda de backend, o faturamento salta significativamente. Setembro, dezembro, janeiro e fevereiro — todos com backend — superaram os demais. <span class="gold-text">O backend e o diferencial.</span></p>
       </div>
     </div>
   </div>
-  <div class="slide-footer">Rafael Oshiro | Plano Estratégico de Escala | Março de 2026</div>
+  <div class="slide-footer">Rafael Oshiro | Plano Estrategico de Escala | Marco de 2026</div>
 </section>
 
-<!-- ============================== SLIDE 12: ANÁLISE DE MERCADO ============================== -->
+<!-- ============================== SLIDE 12: ANALISE DE MERCADO ============================== -->
 <section class="slide" id="slide-12">
   <div class="slide-content">
     <div class="slide-number">Slide 12</div>
-    <h2>Análise de <span class="gold">Mercado</span></h2>
-    <p class="subtitle">O mercado jurídico brasileiro oferece uma oportunidade massiva e praticamente inexplorada para o posicionamento de Baldança Botelho.</p>
+    <h2>Analise de <span class="gold">Mercado</span></h2>
+    <p class="subtitle">O mercado juridico brasileiro oferece uma oportunidade massiva e praticamente inexplorada para o posicionamento de Baldanca Botelho.</p>
 
     <div class="card-grid-3">
       <div class="metric-box">
@@ -1137,130 +1115,130 @@ p {
       </div>
       <div class="metric-box">
         <div class="metric-value">72%</div>
-        <div class="metric-label">Autônomos</div>
+        <div class="metric-label">Autonomos</div>
       </div>
       <div class="metric-box">
         <div class="metric-value">34%</div>
-        <div class="metric-label">Ganham menos de R$2.824/mês</div>
+        <div class="metric-label">Ganham menos de R$2.824/mes</div>
       </div>
     </div>
 
     <div class="glass-card" style="margin-top: 24px;">
-      <h3>Oportunidade Única</h3>
-      <p>A proposta de Baldança Botelho — ensinar advogados a cobrar honorários pré-pagos de forma estruturada — ocupa um espaço onde <strong>não existe nenhum concorrente direto</strong>.</p>
-      <p>Existem cursos genéricos de marketing jurídico, mas nenhum player domina o nicho específico de honorários pré-pagos para advogados autônomos.</p>
+      <h3>Oportunidade Unica</h3>
+      <p>A proposta de Baldanca Botelho — ensinar advogados a cobrar honorarios pre-pagos de forma estruturada — ocupa um espaco onde <strong>nao existe nenhum concorrente direto</strong>.</p>
+      <p>Existem cursos genericos de marketing juridico, mas nenhum player domina o nicho especifico de honorarios pre-pagos para advogados autonomos.</p>
     </div>
 
     <div class="card-grid">
       <div class="glass-card-sm">
         <h3>Tamanho da Dor</h3>
-        <p style="margin-bottom: 0;">Mais de 440 mil advogados ganham menos de R$2.824/mês. São profissionais com formação superior, capacidade de investimento (mesmo que limitada) e uma dor real: não sabem cobrar adequadamente pelos seus serviços.</p>
+        <p style="margin-bottom: 0;">Mais de 440 mil advogados ganham menos de R$2.824/mes. Sao profissionais com formacao superior, capacidade de investimento (mesmo que limitada) e uma dor real: nao sabem cobrar adequadamente pelos seus servicos.</p>
       </div>
       <div class="glass-card-sm">
-        <h3>Zero Concorrência Direta</h3>
-        <p style="margin-bottom: 0;">Nenhum player no mercado brasileiro oferece uma solução estruturada para honorários pré-pagos. Baldança Botelho é a referência neste nicho. A marca tem a oportunidade de dominar completamente este espaço.</p>
+        <h3>Zero Concorrencia Direta</h3>
+        <p style="margin-bottom: 0;">Nenhum player no mercado brasileiro oferece uma solucao estruturada para honorarios pre-pagos. Baldanca Botelho e a referencia neste nicho. A marca tem a oportunidade de dominar completamente este espaco.</p>
       </div>
     </div>
 
     <div class="highlight-box-green">
-      Com 1,3 milhão de advogados e zero concorrência direta, o potencial de escala é enorme. A operação atual atinge apenas uma fração mínima do mercado endereçável.
+      Com 1,3 milhao de advogados e zero concorrencia direta, o potencial de escala e enorme. A operacao atual atinge apenas uma fracao minima do mercado enderecavel.
     </div>
   </div>
-  <div class="slide-footer">Rafael Oshiro | Plano Estratégico de Escala | Março de 2026</div>
+  <div class="slide-footer">Rafael Oshiro | Plano Estrategico de Escala | Marco de 2026</div>
 </section>
 
-<!-- ============================== SLIDE 13: SUGESTÕES DE CONTEÚDO ============================== -->
+<!-- ============================== SLIDE 13: SUGESTOES DE CONTEUDO ============================== -->
 <section class="slide" id="slide-13">
   <div class="slide-content">
     <div class="slide-number">Slide 13</div>
-    <h2>Sugestões de Conteúdo para <span class="gold">Instagram</span></h2>
-    <p class="subtitle">As recomendações abaixo são sugestões estratégicas que podem fortalecer a presença digital e complementar as campanhas pagas. A decisão de implementação fica a critério do projeto.</p>
+    <h2>Sugestoes de Conteudo para <span class="gold">Instagram</span></h2>
+    <p class="subtitle">As recomendacoes abaixo sao sugestoes estrategicas que podem fortalecer a presenca digital e complementar as campanhas pagas. A decisao de implementacao fica a criterio do projeto.</p>
 
     <div class="card-grid">
       <div class="glass-card-sm">
         <h3>Pilar 1 — Autoridade</h3>
-        <p style="margin-bottom: 0;">Conteúdo que posiciona Baldança Botelho como referência em honorários. Dados do mercado, cases (anônimos), bastidores de resultados reais.</p>
+        <p style="margin-bottom: 0;">Conteudo que posiciona Baldanca Botelho como referencia em honorarios. Dados do mercado, cases (anonimos), bastidores de resultados reais.</p>
       </div>
       <div class="glass-card-sm">
-        <h3>Pilar 2 — Educação</h3>
-        <p style="margin-bottom: 0;">Dicas práticas sobre cobrança, propostas comerciais, contratos. Conteúdo que gera valor imediato e demonstra a profundidade do conhecimento.</p>
+        <h3>Pilar 2 — Educacao</h3>
+        <p style="margin-bottom: 0;">Dicas praticas sobre cobranca, propostas comerciais, contratos. Conteudo que gera valor imediato e demonstra a profundidade do conhecimento.</p>
       </div>
       <div class="glass-card-sm">
-        <h3>Pilar 3 — Conexão</h3>
-        <p style="margin-bottom: 0;">Bastidores, rotina, desafios reais de quem empreende no mundo jurídico. Humaniza a marca e cria identificação com o público.</p>
+        <h3>Pilar 3 — Conexao</h3>
+        <p style="margin-bottom: 0;">Bastidores, rotina, desafios reais de quem empreende no mundo juridico. Humaniza a marca e cria identificacao com o publico.</p>
       </div>
       <div class="glass-card-sm">
-        <h3>Pilar 4 — Conversão</h3>
-        <p style="margin-bottom: 0;">Depoimentos de clientes, chamadas para ação, promoções pontuais. Conteúdo que direciona para o link da Rota dos Honorários.</p>
+        <h3>Pilar 4 — Conversao</h3>
+        <p style="margin-bottom: 0;">Depoimentos de clientes, chamadas para acao, promocoes pontuais. Conteudo que direciona para o link da Rota dos Honorarios.</p>
       </div>
     </div>
 
     <div class="glass-card" style="margin-top: 8px;">
-      <h3>Sugestão de Frequência</h3>
-      <p style="margin-bottom: 0;">3-5 posts por semana (feed + stories). 1-2 Reels por semana para alcance orgânico. Stories diários para manter presença e engajamento.</p>
+      <h3>Sugestao de Frequencia</h3>
+      <p style="margin-bottom: 0;">3-5 posts por semana (feed + stories). 1-2 Reels por semana para alcance organico. Stories diarios para manter presenca e engajamento.</p>
     </div>
 
     <div class="glass-card" style="margin-top: 8px;">
-      <h3>15 Ideias de Conteúdo</h3>
+      <h3>15 Ideias de Conteudo</h3>
       <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 6px;">
-        <div class="content-idea"><span class="idea-num">01</span><span class="idea-text">"Por que advogados têm medo de cobrar?" — Reels</span></div>
+        <div class="content-idea"><span class="idea-num">01</span><span class="idea-text">"Por que advogados tem medo de cobrar?" — Reels</span></div>
         <div class="content-idea"><span class="idea-num">02</span><span class="idea-text">"3 erros ao enviar proposta comercial" — Carrossel</span></div>
-        <div class="content-idea"><span class="idea-num">03</span><span class="idea-text">"Quanto cobrar por uma consultoria jurídica?" — Reels</span></div>
+        <div class="content-idea"><span class="idea-num">03</span><span class="idea-text">"Quanto cobrar por uma consultoria juridica?" — Reels</span></div>
         <div class="content-idea"><span class="idea-num">04</span><span class="idea-text">"O contrato que todo advogado deveria usar" — Carrossel</span></div>
-        <div class="content-idea"><span class="idea-num">05</span><span class="idea-text">"Antes vs. depois: honorários pré-pagos" — Stories</span></div>
-        <div class="content-idea"><span class="idea-num">06</span><span class="idea-text">"Por que eu só recebo antes de começar" — Reels</span></div>
+        <div class="content-idea"><span class="idea-num">05</span><span class="idea-text">"Antes vs. depois: honorarios pre-pagos" — Stories</span></div>
+        <div class="content-idea"><span class="idea-num">06</span><span class="idea-text">"Por que eu so recebo antes de comecar" — Reels</span></div>
         <div class="content-idea"><span class="idea-num">07</span><span class="idea-text">"Depoimento de cliente (print anonimizado)" — Feed</span></div>
-        <div class="content-idea"><span class="idea-num">08</span><span class="idea-text">"5 tipos de honorários que você deveria conhecer" — Carrossel</span></div>
-        <div class="content-idea"><span class="idea-num">09</span><span class="idea-text">"Como montar uma tabela de honorários" — Reels</span></div>
-        <div class="content-idea"><span class="idea-num">10</span><span class="idea-text">"O maior erro do advogado autônomo" — Reels</span></div>
+        <div class="content-idea"><span class="idea-num">08</span><span class="idea-text">"5 tipos de honorarios que voce deveria conhecer" — Carrossel</span></div>
+        <div class="content-idea"><span class="idea-num">09</span><span class="idea-text">"Como montar uma tabela de honorarios" — Reels</span></div>
+        <div class="content-idea"><span class="idea-num">10</span><span class="idea-text">"O maior erro do advogado autonomo" — Reels</span></div>
         <div class="content-idea"><span class="idea-num">11</span><span class="idea-text">"Bastidores: criando um contrato do zero" — Stories</span></div>
-        <div class="content-idea"><span class="idea-num">12</span><span class="idea-text">"Advocacia empresarial: por onde começar?" — Carrossel</span></div>
-        <div class="content-idea"><span class="idea-num">13</span><span class="idea-text">"O que ninguém te ensina na OAB" — Reels</span></div>
+        <div class="content-idea"><span class="idea-num">12</span><span class="idea-text">"Advocacia empresarial: por onde comecar?" — Carrossel</span></div>
+        <div class="content-idea"><span class="idea-num">13</span><span class="idea-text">"O que ninguem te ensina na OAB" — Reels</span></div>
         <div class="content-idea"><span class="idea-num">14</span><span class="idea-text">"Como lidar com cliente que pede desconto" — Reels</span></div>
         <div class="content-idea"><span class="idea-num">15</span><span class="idea-text">"Minha rotina como advogada empresarial" — Stories</span></div>
       </div>
     </div>
   </div>
-  <div class="slide-footer">Rafael Oshiro | Plano Estratégico de Escala | Março de 2026</div>
+  <div class="slide-footer">Rafael Oshiro | Plano Estrategico de Escala | Marco de 2026</div>
 </section>
 
-<!-- ============================== SLIDE 14: PONTO CRÍTICO — VELOCIDADE DA PÁGINA ============================== -->
+<!-- ============================== SLIDE 14: PONTO CRITICO — VELOCIDADE DA PAGINA ============================== -->
 <section class="slide" id="slide-14">
   <div class="slide-content">
     <div class="slide-number">Slide 14</div>
-    <h2>Ponto Crítico — <span class="gold">Velocidade da Página</span></h2>
-    <p class="subtitle">A página de vendas carrega lentamente. Isso significa que uma parcela significativa do tráfego pago está sendo desperdiçada antes mesmo de ver a oferta.</p>
+    <h2>Ponto Critico — <span class="gold">Velocidade da Pagina</span></h2>
+    <p class="subtitle">A pagina de vendas carrega lentamente. Isso significa que uma parcela significativa do trafego pago esta sendo desperdicada antes mesmo de ver a oferta.</p>
 
     <div class="card-grid-3">
       <div class="metric-box" style="border-color: var(--red-soft);">
-        <div class="metric-value" style="color: var(--red-soft);">−7%</div>
-        <div class="metric-label">Conversões perdidas<br>por cada 1 segundo<br>de atraso</div>
+        <div class="metric-value" style="color: var(--red-soft);">-7%</div>
+        <div class="metric-label">Conversoes perdidas<br>por cada 1 segundo<br>de atraso</div>
       </div>
       <div class="metric-box" style="border-color: var(--red-soft);">
-        <div class="metric-value" style="color: var(--red-soft);">−4,42%</div>
-        <div class="metric-label">Queda na conversão<br>a cada segundo extra<br>de carregamento</div>
+        <div class="metric-value" style="color: var(--red-soft);">-4,42%</div>
+        <div class="metric-label">Queda na conversao<br>a cada segundo extra<br>de carregamento</div>
       </div>
       <div class="metric-box">
         <div class="metric-value">47%</div>
-        <div class="metric-label">dos usuários esperam<br>no máximo 2 segundos<br>de carregamento</div>
+        <div class="metric-label">dos usuarios esperam<br>no maximo 2 segundos<br>de carregamento</div>
       </div>
     </div>
 
     <div class="highlight-box-red" style="margin-top: 24px;">
-      <strong>O problema:</strong> Se a página demora 5 ou mais segundos para carregar, quase metade dos visitantes simplesmente sai antes de ver qualquer conteúdo. É como pagar o anúncio no Facebook e o cliente chegar na porta da loja, mas a porta estar travada. Ele vai embora.
+      <strong>O problema:</strong> Se a pagina demora 5 ou mais segundos para carregar, quase metade dos visitantes simplesmente sai antes de ver qualquer conteudo. E como pagar o anuncio no Facebook e o cliente chegar na porta da loja, mas a porta estar travada. Ele vai embora.
     </div>
 
     <div class="glass-card" style="margin-top: 16px;">
-      <h3>O que causa a lentidão</h3>
-      <p>Páginas com CSS pesado, imagens não otimizadas, scripts externos em excesso e sem técnicas modernas de carregamento (como lazy loading e compressão). Cada recurso extra que a página precisa baixar é mais um segundo de espera para o visitante.</p>
+      <h3>O que causa a lentidao</h3>
+      <p>Paginas com CSS pesado, imagens nao otimizadas, scripts externos em excesso e sem tecnicas modernas de carregamento (como lazy loading e compressao). Cada recurso extra que a pagina precisa baixar e mais um segundo de espera para o visitante.</p>
     </div>
 
     <div class="glass-card">
-      <h3>Projeção — Impacto da Otimização</h3>
-      <p class="subtitle" style="margin-bottom: 16px;">Se otimizarmos a página de vendas de ~5 segundos para ~2 segundos de carregamento:</p>
+      <h3>Projecao — Impacto da Otimizacao</h3>
+      <p class="subtitle" style="margin-bottom: 16px;">Se otimizarmos a pagina de vendas de ~5 segundos para ~2 segundos de carregamento:</p>
       <table class="data-table">
         <thead>
-          <tr><th>Métrica</th><th>Hoje (página lenta)</th><th>Após otimização</th></tr>
+          <tr><th>Metrica</th><th>Hoje (pagina lenta)</th><th>Apos otimizacao</th></tr>
         </thead>
         <tbody>
           <tr>
@@ -1269,27 +1247,27 @@ p {
             <td class="green-text">~2 segundos</td>
           </tr>
           <tr>
-            <td>Visitantes que desistem antes de ver a página</td>
+            <td>Visitantes que desistem antes de ver a pagina</td>
             <td class="red-text">~30-40%</td>
             <td class="green-text">~10-15%</td>
           </tr>
           <tr>
-            <td>Melhoria estimada na conversão</td>
+            <td>Melhoria estimada na conversao</td>
             <td>—</td>
             <td class="gold-text">+20% a +30%</td>
           </tr>
           <tr>
-            <td>Compradores mensais (média atual: ~32)</td>
-            <td>~32/mês</td>
-            <td class="green-text">~38 a 42/mês</td>
+            <td>Compradores mensais (media atual: ~32)</td>
+            <td>~32/mes</td>
+            <td class="green-text">~38 a 42/mes</td>
           </tr>
           <tr>
-            <td>Compradores extras por mês</td>
+            <td>Compradores extras por mes</td>
             <td>—</td>
             <td class="gold-text">+6 a +10</td>
           </tr>
           <tr class="highlight-row">
-            <td><strong>Receita extra por mês (front + bumps)</strong></td>
+            <td><strong>Receita extra por mes (front + bumps)</strong></td>
             <td>—</td>
             <td><strong class="gold-text">+R$540 a R$900</strong></td>
           </tr>
@@ -1303,184 +1281,186 @@ p {
     </div>
 
     <div class="highlight-box-green">
-      <strong>Impacto real:</strong> Esses 18 a 30 compradores extras entram no funil de ascensão — banners, automação de WhatsApp, consumo de conteúdo — e alimentam o pipeline de vendas do backend (R$1.497). <strong>Uma única venda extra de backend já paga toda a otimização da página.</strong>
+      <strong>Impacto real:</strong> Esses 18 a 30 compradores extras entram no funil de ascensao — banners, automacao de WhatsApp, consumo de conteudo — e alimentam o pipeline de vendas do backend (R$1.497). <strong>Uma unica venda extra de backend ja paga toda a otimizacao da pagina.</strong>
     </div>
 
-    <p style="font-size: 0.78rem; color: var(--white-50); margin-top: 8px; text-align: center;">Fontes: Cloudflare, HubSpot, Google PageSpeed Insights — dados de 2025/2026 sobre impacto de velocidade em conversões.</p>
+    <p style="font-size: 0.78rem; color: var(--white-50); margin-top: 8px; text-align: center;">Fontes: Cloudflare, HubSpot, Google PageSpeed Insights — dados de 2025/2026 sobre impacto de velocidade em conversoes.</p>
   </div>
-  <div class="slide-footer">Rafael Oshiro | Plano Estratégico de Escala | Março de 2026</div>
+  <div class="slide-footer">Rafael Oshiro | Plano Estrategico de Escala | Marco de 2026</div>
 </section>
 
-<!-- ============================== SLIDE 15: PLANO DE AÇÃO 12 SEMANAS ============================== -->
+<!-- ============================== SLIDE 15: PLANO DE ACAO 12 SEMANAS ============================== -->
 <section class="slide" id="slide-15">
   <div class="slide-content">
     <div class="slide-number">Slide 15</div>
-    <h2>Plano de Ação — <span class="gold">12 Semanas</span></h2>
-    <p class="subtitle">Roadmap de execução dividido em 4 blocos de 3 semanas cada.</p>
+    <h2>Plano de Acao — <span class="gold">12 Semanas</span></h2>
+    <p class="subtitle">Roadmap de execucao dividido em 4 blocos de 3 semanas cada.</p>
 
     <div class="timeline">
       <div class="timeline-item">
-        <h3>Semanas 1-2 — Setup de Automações + Otimização</h3>
+        <h3>Semanas 1-2 — Setup de Automacoes + Otimizacao</h3>
         <p>
-          &#9679; <strong>Otimizar velocidade da página de vendas</strong> (compressão, lazy loading, CSS/JS)<br>
-          &#9679; Configurar automação de WhatsApp via N8N (mensagens de consumo, nutrição, ascensão)<br>
-          &#9679; Criar e instalar banners estratégicos na área de membros<br>
-          &#9679; Implementar recuperação de carrinho abandonado via WhatsApp<br>
-          &#9679; Montar públicos no Facebook (lookalikes de compradores, custom audiences)<br>
+          &#9679; <strong>Otimizar velocidade da pagina de vendas</strong> (compressao, lazy loading, CSS/JS)<br>
+          &#9679; Configurar automacao de WhatsApp via N8N (mensagens de consumo, nutricao, ascensao)<br>
+          &#9679; Criar e instalar banners estrategicos na area de membros<br>
+          &#9679; Implementar recuperacao de carrinho abandonado via WhatsApp<br>
+          &#9679; Montar publicos no Facebook (lookalikes de compradores, custom audiences)<br>
           &#9679; Produzir novos criativos para as 5 campanhas
         </p>
       </div>
 
       <div class="timeline-item">
-        <h3>Semanas 3-4 — Ativação das Campanhas</h3>
+        <h3>Semanas 3-4 — Ativacao das Campanhas</h3>
         <p>
-          &#9679; Lançar campanhas C1 (ASC), C2 (CBO), C3 (Retargeting) e C4 (Backend)<br>
-          &#9679; Reduzir orçamento da campanha atual (C5 — Controle)<br>
-          &#9679; Ativar todas as automações de WhatsApp<br>
-          &#9679; Monitoramento diário: CPA, CTR, taxa de conversão por campanha<br>
-          &#9679; Primeiros ajustes de criativos e públicos
+          &#9679; Lancar campanhas C1 (ASC), C2 (CBO), C3 (Retargeting) e C4 (Backend)<br>
+          &#9679; Reduzir orcamento da campanha atual (C5 — Controle)<br>
+          &#9679; Ativar todas as automacoes de WhatsApp<br>
+          &#9679; Monitoramento diario: CPA, CTR, taxa de conversao por campanha<br>
+          &#9679; Primeiros ajustes de criativos e publicos
         </p>
       </div>
 
       <div class="timeline-item">
-        <h3>Semanas 5-8 — Otimização</h3>
+        <h3>Semanas 5-8 — Otimizacao</h3>
         <p>
           &#9679; Analisar dados acumulados de 3-4 semanas de campanha<br>
-          &#9679; Pausar públicos e criativos com baixa performance<br>
+          &#9679; Pausar publicos e criativos com baixa performance<br>
           &#9679; Escalar investimento nas campanhas com melhor CPA<br>
-          &#9679; Refinar automações de WhatsApp com base nas taxas de resposta<br>
-          &#9679; Otimizar banners na área de membros (A/B testing posição e copy)<br>
+          &#9679; Refinar automacoes de WhatsApp com base nas taxas de resposta<br>
+          &#9679; Otimizar banners na area de membros (A/B testing posicao e copy)<br>
           &#9679; Acompanhar pipeline do time comercial para vendas de backend
         </p>
       </div>
 
       <div class="timeline-item">
-        <h3>Semanas 9-12 — Escala e Preparação High Ticket</h3>
+        <h3>Semanas 9-12 — Escala e Preparacao High Ticket</h3>
         <p>
-          &#9679; Escalar campanhas vencedoras (aumentar orçamento gradualmente)<br>
-          &#9679; Ativar vendas do backend em escala com automação madura<br>
-          &#9679; Começar planejamento da oferta da Pós-Graduação (high ticket)<br>
-          &#9679; Preparar página de vendas e materiais da Pós-Graduação<br>
-          &#9679; Avaliar resultados dos 3 meses e definir estratégia para o trimestre seguinte
+          &#9679; Escalar campanhas vencedoras (aumentar orcamento gradualmente)<br>
+          &#9679; Ativar vendas do backend em escala com automacao madura<br>
+          &#9679; Comecar planejamento da oferta da Pos-Graduacao (high ticket)<br>
+          &#9679; Preparar pagina de vendas e materiais da Pos-Graduacao<br>
+          &#9679; Avaliar resultados dos 3 meses e definir estrategia para o trimestre seguinte
         </p>
       </div>
     </div>
   </div>
-  <div class="slide-footer">Rafael Oshiro | Plano Estratégico de Escala | Março de 2026</div>
+  <div class="slide-footer">Rafael Oshiro | Plano Estrategico de Escala | Marco de 2026</div>
 </section>
 
-<!-- ============================== SLIDE 16: PRÓXIMOS PASSOS ============================== -->
+<!-- ============================== SLIDE 16: PROXIMOS PASSOS ============================== -->
 <section class="slide" id="slide-16">
   <div class="slide-content">
     <div class="slide-number">Slide 16</div>
-    <h2>Próximos <span class="gold">Passos</span></h2>
-    <p class="subtitle">Ações imediatas para iniciar a execução do plano.</p>
+    <h2>Proximos <span class="gold">Passos</span></h2>
+    <p class="subtitle">Acoes imediatas para iniciar a execucao do plano.</p>
 
     <ol class="step-list">
       <li>
-        <strong>Aprovar o plano estratégico e alinhar expectativas</strong><br>
-        <span style="color: var(--white-70); font-size: 0.9rem;">Prazo: esta semana | Responsável: Baldança Botelho + Rafael Oshiro</span>
+        <strong>Aprovar o plano estrategico e alinhar expectativas</strong><br>
+        <span style="color: var(--white-70); font-size: 0.9rem;">Prazo: esta semana | Responsavel: Baldanca Botelho + Rafael Oshiro</span>
       </li>
       <li>
-        <strong>Liberar acesso à área de membros para configuração dos banners</strong><br>
-        <span style="color: var(--white-70); font-size: 0.9rem;">Prazo: até sexta-feira | Responsável: Baldança Botelho</span>
+        <strong>Liberar acesso a area de membros para configuracao dos banners</strong><br>
+        <span style="color: var(--white-70); font-size: 0.9rem;">Prazo: ate sexta-feira | Responsavel: Baldanca Botelho</span>
       </li>
       <li>
-        <strong>Configurar automações de WhatsApp no N8N</strong><br>
-        <span style="color: var(--white-70); font-size: 0.9rem;">Prazo: semana 1-2 | Responsável: Rafael Oshiro</span>
+        <strong>Configurar automacoes de WhatsApp no N8N</strong><br>
+        <span style="color: var(--white-70); font-size: 0.9rem;">Prazo: semana 1-2 | Responsavel: Rafael Oshiro</span>
       </li>
       <li>
-        <strong>Implementar recuperação de carrinho abandonado</strong><br>
-        <span style="color: var(--white-70); font-size: 0.9rem;">Prazo: semana 1-2 | Responsável: Rafael Oshiro</span>
+        <strong>Implementar recuperacao de carrinho abandonado</strong><br>
+        <span style="color: var(--white-70); font-size: 0.9rem;">Prazo: semana 1-2 | Responsavel: Rafael Oshiro</span>
       </li>
       <li>
-        <strong>Criar e instalar banners na área de membros</strong><br>
-        <span style="color: var(--white-70); font-size: 0.9rem;">Prazo: semana 1-2 | Responsável: Rafael Oshiro</span>
+        <strong>Criar e instalar banners na area de membros</strong><br>
+        <span style="color: var(--white-70); font-size: 0.9rem;">Prazo: semana 1-2 | Responsavel: Rafael Oshiro</span>
       </li>
       <li>
         <strong>Produzir novos criativos e configurar campanhas C1-C4</strong><br>
-        <span style="color: var(--white-70); font-size: 0.9rem;">Prazo: semana 2-3 | Responsável: <strong style="color: var(--gold);">Baldança Botelho + Rafael Oshiro</strong></span><br>
-        <span style="color: var(--white-50); font-size: 0.82rem;">A produção de criativos (vídeos, imagens, copies) e a configuração técnica das campanhas no Facebook são responsabilidade conjunta da equipe Baldança Botelho e de Rafael Oshiro.</span>
+        <span style="color: var(--white-70); font-size: 0.9rem;">Prazo: semana 2-3 | Responsavel: <strong style="color: var(--gold);">Baldanca Botelho + Rafael Oshiro</strong></span><br>
+        <span style="color: var(--white-50); font-size: 0.82rem;">A producao de criativos (videos, imagens, copies) e a configuracao tecnica das campanhas no Facebook sao responsabilidade conjunta da equipe Baldanca Botelho e de Rafael Oshiro.</span>
       </li>
       <li>
-        <strong>Otimizar velocidade da página de vendas</strong><br>
-        <span style="color: var(--white-70); font-size: 0.9rem;">Prazo: semana 1-2 | Responsável: Baldança Botelho + Rafael Oshiro</span><br>
-        <span style="color: var(--white-50); font-size: 0.82rem;">Compressão de imagens, otimização de CSS/JS, lazy loading. Página rápida = mais conversões do tráfego que já estamos pagando.</span>
+        <strong>Otimizar velocidade da pagina de vendas</strong><br>
+        <span style="color: var(--white-70); font-size: 0.9rem;">Prazo: semana 1-2 | Responsavel: Baldanca Botelho + Rafael Oshiro</span><br>
+        <span style="color: var(--white-50); font-size: 0.82rem;">Compressao de imagens, otimizacao de CSS/JS, lazy loading. Pagina rapida = mais conversoes do trafego que ja estamos pagando.</span>
       </li>
       <li>
         <strong>Alinhar time comercial sobre o fluxo de leads aquecidos</strong><br>
-        <span style="color: var(--white-70); font-size: 0.9rem;">Prazo: semana 2 | Responsável: Baldança Botelho + Rafael Oshiro</span>
+        <span style="color: var(--white-70); font-size: 0.9rem;">Prazo: semana 2 | Responsavel: Baldanca Botelho + Rafael Oshiro</span>
       </li>
       <li>
-        <strong>Ativar campanhas e iniciar monitoramento diário</strong><br>
-        <span style="color: var(--white-70); font-size: 0.9rem;">Prazo: semana 3 | Responsável: Baldança Botelho + Rafael Oshiro</span>
+        <strong>Ativar campanhas e iniciar monitoramento diario</strong><br>
+        <span style="color: var(--white-70); font-size: 0.9rem;">Prazo: semana 3 | Responsavel: Baldanca Botelho + Rafael Oshiro</span>
       </li>
     </ol>
 
     <div class="highlight-box">
-      "O sucesso deste plano depende de execução rápida e alinhada. As duas primeiras semanas são críticas para montar toda a infraestrutura antes de ativar as novas campanhas."
+      "O sucesso deste plano depende de execucao rapida e alinhada. As duas primeiras semanas sao criticas para montar toda a infraestrutura antes de ativar as novas campanhas."
     </div>
   </div>
-  <div class="slide-footer">Rafael Oshiro | Plano Estratégico de Escala | Março de 2026</div>
+  <div class="slide-footer">Rafael Oshiro | Plano Estrategico de Escala | Marco de 2026</div>
 </section>
 
 <!-- ============================== SLIDE 17: ENCERRAMENTO ============================== -->
 <section class="slide" id="slide-17">
   <div class="slide-content cover-slide">
     <div class="cover-line"></div>
-    <h1 style="font-size: clamp(1.8rem, 3.5vw, 2.8rem);">Obrigado pela <span class="gold">confiança</span>.</h1>
-    <p class="subtitle" style="max-width: 600px; text-align: center; margin: 16px auto;">Vamos construir juntos uma operação que escale de forma previsível e sustentável.</p>
+    <h1 style="font-size: clamp(1.8rem, 3.5vw, 2.8rem);">Obrigado pela <span class="gold">confianca</span>.</h1>
+    <p class="subtitle" style="max-width: 600px; text-align: center; margin: 16px auto;">Vamos construir juntos uma operacao que escale de forma previsivel e sustentavel.</p>
     <div class="cover-line"></div>
-    <p class="cover-brand" style="margin-top: 32px;">Baldança Botelho</p>
+    <p class="cover-brand" style="margin-top: 32px;">Baldanca Botelho</p>
     <p class="cover-author"><strong>Rafael Oshiro</strong></p>
-    <p class="cover-date">Plano Estratégico de Escala — Março de 2026</p>
+    <p class="cover-date">Plano Estrategico de Escala — Marco de 2026</p>
   </div>
-  <div class="slide-footer">Rafael Oshiro | Plano Estratégico de Escala | Março de 2026</div>
+  <div class="slide-footer">Rafael Oshiro | Plano Estrategico de Escala | Marco de 2026</div>
 </section>
 
 <!-- ============================== JAVASCRIPT ============================== -->
 <script>
 (function() {
-  // Generate navigation dots
-  const totalSlides = document.querySelectorAll('.slide').length;
-  const navContainer = document.getElementById('navDots');
-  for (let i = 1; i <= totalSlides; i++) {
-    const dot = document.createElement('div');
+  var totalSlides = document.querySelectorAll('.slide').length;
+  var navContainer = document.getElementById('navDots');
+  for (var i = 1; i <= totalSlides; i++) {
+    var dot = document.createElement('div');
     dot.className = 'nav-dot';
     dot.dataset.slide = i;
     dot.title = 'Slide ' + i;
-    dot.addEventListener('click', function() {
-      document.getElementById('slide-' + i).scrollIntoView({ behavior: 'smooth' });
-    });
+    dot.addEventListener('click', (function(n) {
+      return function() {
+        document.getElementById('slide-' + n).scrollIntoView({ behavior: 'smooth' });
+      };
+    })(i));
     navContainer.appendChild(dot);
   }
 
-  // Update active dot on scroll
-  const slides = document.querySelectorAll('.slide');
-  const dots = document.querySelectorAll('.nav-dot');
+  var slides = document.querySelectorAll('.slide');
+  var dots = document.querySelectorAll('.nav-dot');
 
-  const observer = new IntersectionObserver(function(entries) {
-    entries.forEach(function(entry) {
-      if (entry.isIntersecting) {
-        const slideNum = entry.target.id.replace('slide-', '');
-        dots.forEach(function(d) { d.classList.remove('active'); });
-        const activeDot = document.querySelector('.nav-dot[data-slide="' + slideNum + '"]');
+  var observer = new IntersectionObserver(function(entries) {
+    for (var j = 0; j < entries.length; j++) {
+      if (entries[j].isIntersecting) {
+        var slideNum = entries[j].target.id.replace('slide-', '');
+        for (var k = 0; k < dots.length; k++) { dots[k].classList.remove('active'); }
+        var activeDot = document.querySelector('.nav-dot[data-slide="' + slideNum + '"]');
         if (activeDot) activeDot.classList.add('active');
       }
-    });
+    }
   }, { threshold: 0.5 });
 
-  slides.forEach(function(slide) { observer.observe(slide); });
+  for (var s = 0; s < slides.length; s++) { observer.observe(slides[s]); }
 
-  // Keyboard navigation
   document.addEventListener('keydown', function(e) {
-    const currentSlide = Array.from(slides).find(function(s) {
-      const rect = s.getBoundingClientRect();
-      return rect.top >= -100 && rect.top <= window.innerHeight / 2;
-    });
-
+    var currentSlide = null;
+    for (var m = 0; m < slides.length; m++) {
+      var rect = slides[m].getBoundingClientRect();
+      if (rect.top >= -100 && rect.top <= window.innerHeight / 2) {
+        currentSlide = slides[m];
+        break;
+      }
+    }
     if (!currentSlide) return;
-    const currentNum = parseInt(currentSlide.id.replace('slide-', ''));
+    var currentNum = parseInt(currentSlide.id.replace('slide-', ''));
 
     if ((e.key === 'ArrowDown' || e.key === 'ArrowRight' || e.key === 'PageDown' || e.key === ' ') && currentNum < totalSlides) {
       e.preventDefault();
